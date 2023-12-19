@@ -9,7 +9,7 @@ const EmployeesList = ({data}) => {
     const {id, ...itemProps} = item;
 
         return (
-            <EmployeesListItem Key={id} {...itemProps}/>
+            <EmployeesListItem key={id} {...itemProps}/>
         )
     })
 
