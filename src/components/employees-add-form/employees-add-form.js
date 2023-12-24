@@ -36,7 +36,7 @@ class EmployeesAddForm extends Component {
                     placeholder="З/П в $?" 
                     name="salary"
                     value={salary}
-                    onChamge={this.onValueChange}/>
+                    onChange={this.onValueChange}/>
 
                 <button type="submit"
                         className="btn btn-outline-light">Добавить</button>
