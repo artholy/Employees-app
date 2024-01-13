@@ -55,7 +55,7 @@ class App extends Component {
         return item;
       })
     }))
-    }
+  }
 
   onToggleRise = (id) => {
     console.log(`Rise this ${id}`);
