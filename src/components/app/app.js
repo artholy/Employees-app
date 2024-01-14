@@ -71,7 +71,6 @@ class App extends Component {
 
   onUpdateSearch = (term) => {
     this.setState ({term});
-  
   }
 
   filterPost = (items, filter) => {
@@ -83,6 +82,10 @@ class App extends Component {
       default:
         return items;    
     }
+  }
+
+  onFilterSelect = (filter) => {
+    this.setState ({filter});
   }
 
   render() {
@@ -97,7 +100,7 @@ class App extends Component {
   
           <div className="search-panel">
               <SearchPanel  onUpdateSearch={this.onUpdateSearch}/>
-              <AppFilter/>
+              <AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
           </div>
           
           <EmployeesList 
